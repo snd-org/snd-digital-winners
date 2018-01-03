@@ -1,0 +1,47 @@
+body {
+	font-family: Georgia;
+}
+
+.medal, .best {
+  border-radius: 5px;
+  color: white;
+  padding: 1.3rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  display: inline-block;
+  line-height: 1;
+  margin: 1rem 0;
+}
+
+.silver {
+	background-color: #ada8a8;
+}
+
+.gold {
+	background-color: #dcbd15;
+}
+
+.best {
+	background-color: #0fa0ce;
+}
+
+.row::after {
+  content: "~";
+  width: 100%;
+  margin: 1rem 0;
+  color: lightgray;
+}
+
+.category {
+	font-weight: bold;
+}
+
+.publication {
+	font-style: italic;
+	color: gray;
+}
+
+.judges {
+	margin-top: 1rem;
+}
