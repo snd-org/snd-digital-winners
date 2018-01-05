@@ -2,6 +2,10 @@ body {
 	font-family: 'Noto Serif', serif;
 }
 
+.row {
+  margin-bottom: 15px;
+}
+
 .medal, .best {
   border-radius: 5px;
   color: white;
@@ -25,13 +29,6 @@ body {
 
 .best {
 	background-color: #0fa0ce;
-}
-
-.row::after {
-  content: "~";
-  width: 100%;
-  margin: 1rem 0;
-  color: lightgray;
 }
 
 .category {
@@ -76,6 +73,20 @@ h2 a {
 .image-false .category, .image-false .publication {
   text-align: center;
 }
+
+@media screen and (max-width: 650px) {
+  .image {
+    float: none;
+    width: 100%;
+    margin: -1% 0 0 -4%;
+  }
+
+  h2 {
+    text-align: left;
+    margin-bottom: 0px;
+  }
+}
+
 
 .cf:before,
 .cf:after {
