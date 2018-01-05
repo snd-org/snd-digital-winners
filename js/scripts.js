@@ -4,7 +4,7 @@ $(document).ready(function() {
 	var sortedWinners = _.sortBy(winners, "awardID");
 	$(sortedWinners).each(function(){
 
-		var imageHTML = (this["image"] == "TRUE") ? `<div class="image"><img src="images/` + this["awardID"] + `.png"></div>` : "";
+		var imageHTML = (this["image"] == "TRUE") ? `<div class="image"><a href="` + this["Link"] + `"><img src="images/` + this["awardID"] + `.png"></a></div>` : "";
 
 		var html = `<div class="row">
 				<div class="winner cf image-`+ this["image"].toLowerCase() +`">
@@ -14,7 +14,7 @@ $(document).ready(function() {
 					<div class="category">` + this["Category"] + `</div>
 					<div class="publication">` + this["Publication"] + `</div>
 					<div class="judges"><strong>What the Judges Said: </strong>“` + this["Judges"] + `”</div>
-					<div class="read"><a href=“` + this["SND Post"] + `”>Read more.</a></div>
+					<div class="read"><a href="` + this["SND Post"] + `">Read the SND post.</a></div>
 				</div>
 			</div>`
 
