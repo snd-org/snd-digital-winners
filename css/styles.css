@@ -1,5 +1,5 @@
 body {
-	font-family: Georgia;
+	font-family: 'Noto Serif', serif;
 }
 
 .medal, .best {
@@ -12,6 +12,7 @@ body {
   display: inline-block;
   line-height: 1;
   margin: 1rem 0;
+  text-align: center;
 }
 
 .silver {
@@ -44,4 +45,44 @@ body {
 
 .judges {
 	margin-top: 1rem;
+}
+
+h2 {
+  font-weight: 600;
+  text-align: center;
+}
+
+h2 a {
+  color: black;
+  text-decoration: none;
+}
+
+.image {
+  width: 50%;
+  float: left;
+  margin: -1% 1% 0 -2%;
+}
+
+.image img {
+  width: 100%;
+}
+
+.image-false h3 {
+  width: 220px;
+  margin: 1rem auto;
+  display: block;
+}
+
+.image-false .category, .image-false .publication {
+  text-align: center;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
 }
